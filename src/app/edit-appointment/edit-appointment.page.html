@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>edit-appointment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list lines="full">
+    <form [formGroup]="updateBookingForm" (ngSubmit)="updateForm()">
+    
+      <ion-item>
+        <ion-label position="floating">nombre</ion-label>
+        <ion-input formControlName="nombre" type="text" >
+        </ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">apellido_p</ion-label>
+        <ion-input formControlName="apellido_p" type="text" >
+        </ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">apellido_m</ion-label>
+        <ion-input formControlName="apellido_m" type="text" >
+        </ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">edad</ion-label>
+        <ion-input formControlName="edad" type="text" >
+        </ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">fecha_nacimiento</ion-label>
+        <ion-input formControlName="fecha_nacimiento" type="text" >
+        </ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">curp</ion-label>
+        <ion-input formControlName="curp" type="text" >
+        </ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">ciudad</ion-label>
+        <ion-input formControlName="ciudad" type="text" >
+        </ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">estado</ion-label>
+        <ion-input formControlName="estado" type="text" >
+        </ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">grado_estudio</ion-label>
+        <ion-input formControlName="grado_estudio" type="text" >
+        </ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">nombre_padre_madre_tutor</ion-label>
+        <ion-input formControlName="nombre_padre_madre_tutor" type="text" >
+        </ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">num_celular</ion-label>
+        <ion-input formControlName="num_celular" type="text" >
+        </ion-input>
+      </ion-item>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="primary" shape="full" expand="block">Update Appointment</ion-button>
+        </ion-col>
+      </ion-row>
+
+    </form>
+  </ion-list>
+
+</ion-content>
